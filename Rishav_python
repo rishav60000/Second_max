@@ -1,0 +1,387 @@
+# w3_resource
+
+# Q1. Write a Python program to find the type.
+# T=tuple(map(int,input().split()))
+# print(type(T))
+
+# Q2. Write a Python program to unpack a tuple into several variables.
+# T=(4,5,3,2,7,'rishav')
+# man,rum,sut,*gun=T
+# print(man)
+# print(rum)
+# print(sut)
+# print(gun)
+
+
+# Q3. Write a Python program to add an item to a tuple.
+# T=(4,6,2,9,8)
+# t=('rishav',)
+# T+=t
+# print(T)
+
+
+# Q4. Write a Python program to convert a tuple to a string.
+# T=('R','i','s','h','a','v')
+# T=''.join(T)
+# print(T)
+
+
+# Q5. Write a Python program to get the 4th element from the last element of a tuple.
+# T=(5,8,33,0,9,1)
+# print(T[-4])
+
+
+# Q6. Write a Python program to find repeated items in a tuple.
+# T=(1,2,3,4,8,9,4,5,6,7,4)
+# t=T.count(4)
+# print(t)
+
+
+
+# Q7. Write a Python program to check whether an element exists within a tuple.
+# T=(0,1,2,3,4,5,6,7,8,9)
+# n=int(input('>>'))
+# if n in T:
+#     print('exist')
+# else:
+#     print('not exist')
+
+
+
+# Q8. Write a Python program to convert a list to a tuple.
+# L=['rishav','khaja','madhu',4,7,2,8]
+# T=tuple(L)
+# print(type(T))
+
+
+# Q8. Write a Python program to remove an item from a tuple.
+# T=('r',5,'t',6,3,2,'p')
+# p=list(T)
+# T=T[:2]+T[3:]
+# p.remove('t')
+# print(p)
+# print(T)
+
+
+
+# Q9. Write a Python program to find the index of an item in a tuple.
+# T=('r',5,'t',6,3,2,'p',8)
+# print(T.index('t'))
+
+
+# Q10. Write a Python program to convert a tuple to a dictionary.
+# T=(('r',5),(6,'t'),('m',2),('p',8))
+# t={}
+# for i,j in T:
+#     t[i]=j
+# print(t)
+
+
+# Q11.  Write a Python program to convert a list of tuples into a dictionary.
+# T=[('r',5),(6,'t'),('m',2),('p',8)]
+# t={}
+# for i ,j in T:
+#     t[i]=j
+# print(t)
+
+
+
+# Q12. Write a Python program to replace the last value of tuples in a list
+# L=[(10, 20, 40), (40, 50, 60), (70, 80, 90)]
+# b=[]
+# for t in L:
+#     b+=[t[:-1]+(100,)]
+# print(b)
+    
+
+
+
+
+
+# Q12. Write a Python program to remove an empty tuple(s) from a list of tuples
+# L=[(), (), ('',), ('a', 'b'), ('a', 'b', 'c'), ('d')]
+# l=set(L)
+# print(tuple(l))
+
+
+
+
+
+# L=[10, 20, 40, 40, 50, 60, 70, 80, 90]
+# L.remove(20)
+# print(L)
+# L=[10, 20, 40, 40, 50, 60, 70, 80, 90]
+# L.remove(L[1])
+# print(L)
+
+
+# L=[1,[4,5],[6,7,[6,7]]]
+# a=[]
+# for i in L:
+#     c=type(i)
+#     if c==list:
+#         for j in i:
+#             a+=[j]
+#     else:
+#         a+=[i]
+# print(a)
+
+
+
+# L=['pink','yellow','purple','white','blue']
+# print(L)
+# print(L[2])
+# l=L[0],L[-1]=L[-1],L[0]
+# print(L[0])
+# print(L[-1])
+
+# L=['pink','yellow','purple','white','blue']
+
+# a=5
+# b=len(str(a))
+# print(b)
+
+
+
+
+
+# L=[10, 20, 40, 40, 10, 60, 10, 20, 90]
+# A=[]
+# for i in L:
+#     if i not in A:
+#         A.append(i)
+# print(A)
+
+
+
+
+# Duplicate in a list
+# A=[10, 20, 40, 40, 10, 60, 10, 20,111,112,10, 90,40,50,90]
+# L=[]
+# count=0
+# i=0
+# while i<len(A)-1:
+#     j=i+1
+#     while j<len(A):   
+#         if A[j]>0:     
+#             if A[i]==A[j]:
+#                 A[j]=-1
+#         j+=1
+#     if A[i]>0:
+#         L+=[A[i]]
+#     i+=1
+# print(L)
+
+
+# reversed list
+# A=[10, 20, 40, 40, 10, 60, 10, 20,111,112,10, 90,40,50,90]
+# print(A[-1::-1])
+
+
+
+# a=[]
+# n=int(input('>>'))
+# for i in range(n):
+#     b=[]
+#     for j in range(10):
+#         b+=[j]
+#     a+=[b]
+# print(a)
+
+
+
+
+# find any number in a list
+# A=[10, 20, 40, 40, 10, 60, 10, 20,111,112,10, 90,40,50,90]
+# count=0
+# n=int(input('find number >>'))
+# for i in A:
+#     if i==n:
+#         count+=1
+# if count==0:
+#     print('no')
+# else:
+#     print('yes')
+
+
+
+
+# A=[10, 20, 40, 40, 10, 60, 10, 20,111,112,10, 90,40,50,90]
+# print(A.index(90))
+
+
+# a=[1,2,1]
+# b=a[::-1]
+# print(a,b)
+# if a==b:
+#     print('pelindrom')
+# else:
+#     print('not pelindrom')
+    
+
+
+
+
+# a=int(input('enter row >>'))
+# b=int(input('enter col  >>'))
+# A=[]
+# for i in range(a):
+#     B=[]
+#     for j in range(b):
+#         B.append(0)
+#     A+=[B]
+# C=1
+# high=a-1
+# low=0
+# i=0
+# while i<a:
+#     A[low][i]=C
+#     C+=1
+#     i+=1
+# k=high
+# i=0
+# j=1
+# print(i,j)
+# while k>=i:
+#     A[j][k]=C
+#     C+=1
+#     k-=1
+# j=2
+# i=0
+# k=high
+# while i<=k:
+#     A[j][i]=C
+#     C+=1
+#     i+=1
+# j=3
+# i=0
+# k=high
+# while 
+# for n in A:
+#     print(n)
+
+
+
+
+# tuple Question
+# L=('rishav')
+# l=tuple(L)
+# print(l)
+
+
+
+
+
+
+
+
+# list1 = [1, 2, 3, [4, 5, 6, [5, 2, 4], [9, 7, 8, [5, 7, [2, 1]]]]]
+# a=[]
+# for i in list1:
+#     if type(i) == list:
+#         list1.extend(i)
+#     else:
+#         a.append(i)
+# print(a)
+
+
+
+# T=((1, 2), (3,6), (4, 5), (6,0))
+# print(dict(T))
+# print(b)
+# print(T[3:])
+# print(T[3])
+# print(*zip(T))
+# print('This is tuple ',T)
+
+
+
+
+
+# CRUD PROJECT
+# D=[]
+# flage=0
+# while True  and flage==0:
+#     print('1. Creat account\n2. Read Data\n3. Update\n4. Delete Data\n5. Access all data\n6. Delet all data\n7. Exit')
+#     print('\n')
+#     num=int(input('Enter your option..>>'))
+#     if num==1:
+#             num1=[]
+#             name=input('Entre Name >>')
+#             if len(name)==0:
+#                  del name
+#             else:
+#                  num1.append(name)
+#             print('Only Integer Please')
+#             phone=(input('Enter number >>'))
+#             flege=0
+#             while  len(phone)!=10 and flege!=2:
+#                 print('Envalid number')
+#                 phone=(input('Re-enter phone number..>>'))
+#                 if len(phone)==10:
+#                     flege=2
+#             num1.append(phone)
+#             email=input('Enter E-mail >>')
+#             if len(email)==0:
+#                  del email
+#             else:
+#                 num1.append(email)
+#             pas=input('Enter your password >>') 
+#             if len(pas)==0:
+#                  del pas
+#             else:
+#                 num1.append(pas)
+#             D.append(num1)
+#             print('Your Data is created :)')
+#     elif num==2:
+#             read=input('Enter your data  ..>>')
+#             for i in D:
+#                 if read in i:
+#                     if len(i)==4:
+#                         print(i)
+#                         break
+#                     else:
+#                         print('Your data is not stored')
+#                 else:
+#                      print('Your data not exist')
+#                 print('\n')
+#     elif num==3:
+#             inter=int(input(("Witch Data want's  update\n1. Name  \n2. number  \n3. E-mail \n4. Password\n  Enter >>")))
+#             update=input('Enter Old Data>>')
+#             update1=input('Enter New Data >>')
+#             for i in D:
+#                 if update in i:
+#                     print('After updating >>',i)
+#                     i[inter-1]=update1
+#                     print('Before updating >>',i)
+#                     print('\n')
+#                     break
+#     elif num==4:
+#             remov=(input('Enter Old Data>>'))
+#             for i in D:
+#                 if remov in i:
+#                     i.clear()
+#                     print(D)
+#                     break
+#                 print('Delet successfully :)')
+#                 print('\n')
+#     elif num==5:
+#         d=[]
+#         l=len(D)
+#         for s in range(l-1):
+#             if D[s]!=D[s+1]:
+#                 d.append(D[0])
+#                 d.append(D[s+1])
+#         print(d)     
+#     elif num==6:
+#             D.clear()   
+#             print(D)
+#             print('\nDelete all data')
+#     elif num==7:
+#             flage=1
+#             print('Thanks visit again :)')
+#             print('\n')
+#     else:
+#             flage=1
+#             print('Invalid option :)')
+#             print('\n')    

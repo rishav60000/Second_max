@@ -1,0 +1,89 @@
+# Python-Crud
+
+# CRUD PROJECT
+# D=[]
+# flage=0
+# while True  and flage==0:
+#     print('1. Creat account\n2. Read Data\n3. Update\n4. Delete Data\n5. Access all data\n6. Delet all data\n7. Exit')
+#     print('\n')
+#     num=int(input('Enter your option..>>'))
+#     if num==1:
+#             num1=[]
+#             name=input('Entre Name >>')
+#             if len(name)==0:
+#                  del name
+#             else:
+#                  num1.append(name)
+#             print('Only Integer Please')
+#             phone=(input('Enter number >>'))
+#             flege=0
+#             while  len(phone)!=10 and flege!=2:
+#                 print('Envalid number')
+#                 phone=(input('Re-enter phone number..>>'))
+#                 if len(phone)==10:
+#                     flege=2
+#             num1.append(phone)
+#             email=input('Enter E-mail >>')
+#             if len(email)==0:
+#                  del email
+#             else:
+#                 num1.append(email)
+#             pas=input('Enter your password >>') 
+#             if len(pas)==0:
+#                  del pas
+#             else:
+#                 num1.append(pas)
+#             D.append(num1)
+#             print('Your Data is created :)')
+#     elif num==2:
+#             read=input('Enter your data  ..>>')
+#             for i in D:
+#                 if read in i:
+#                     if len(i)==4:
+#                         print(i)
+#                         break
+#                     else:
+#                         print('Your data is not stored')
+#                 else:
+#                      print('Your data not exist')
+#                 print('\n')
+#     elif num==3:
+#             inter=int(input(("Witch Data want's  update\n1. Name  \n2. number  \n3. E-mail \n4. Password\n  Enter >>")))
+#             update=input('Enter Old Data>>')
+#             update1=input('Enter New Data >>')
+#             for i in D:
+#                 if update in i:
+#                     print('After updating >>',i)
+#                     i[inter-1]=update1
+#                     print('Before updating >>',i)
+#                     print('\n')
+#                     break
+#     elif num==4:
+#             remov=(input('Enter Old Data>>'))
+#             for i in D:
+#                 if remov in i:
+#                     i.clear()
+#                     print(D)
+#                     break
+#                 print('Delet successfully :)')
+#                 print('\n')
+#     elif num==5:
+#         d=[]
+#         l=len(D)
+#         for s in range(l-1):
+#             if D[s]!=D[s+1]:
+#                 d.append(D[0])
+#                 d.append(D[s+1])
+#         print(d)     
+#     elif num==6:
+#             D.clear()   
+#             print(D)
+#             print('\nDelete all data')
+#     elif num==7:
+#             flage=1
+#             print('Thanks visit again :)')
+#             print('\n')
+#     else:
+#             flage=1
+#             print('Invalid option :)')
+#             print('\n')  
