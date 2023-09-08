@@ -1,0 +1,72 @@
+# a = [1,2,-3,4,-5,6,-7,8,-9,10,-11,-12,-13,-14,-15,-16]
+# a = [1, 101, 23, 14, 56, 9, 33, 42, 2, 18, 370, 12, 5, 28, 49, 11, 3, 64, 20, 6, 50, 31, 90, 46, 16, 39, 21, 98, 55, 4, 62, 30, 13, 59, 10, 25, 44, 17, 520,38,90, 38, 22, 51, 15, 43, 26, 61, 32, 29, 60, 47, 36, 58, 24, 35, 54, 45, 63, 48, 530, 7, 100,108]
+a = [-8,7,-6,5,-4,3,-2,-1]
+m = len(a)
+num = 0
+count =- 1
+bl = m
+
+while m != 0:
+    m = m // 2
+    count += 1
+f = count
+    
+# Creat array for indexing
+matrix = []
+i=0
+while i < count:
+    matrix = matrix + [[0]*bl]
+    i += 1
+
+# Creat array for value
+arry = [0] * bl
+i = 0
+k=0
+while i < bl:
+    matrix [0][i] = i+1
+    matrix [0][i+1]=i
+    num += 1
+    if a[i]>a[i+1]:
+        arry[k]=i
+    else:
+        arry[k]=i+1
+    k=k+1
+    i += 2
+
+max = 0
+l = 1
+while (count-1) > 0:
+    i = 0
+    j = 0
+    bl = bl//2
+    s = 0
+    
+    while i < bl :
+        num += 1
+        if a [arry [i]]  >  a [arry [i+1]]:
+            matrix [l][arry [i]]  =  arry [i+1]
+            matrix [l][arry [i+1]]  =  arry [i]
+            arry [j] = arry [i]
+            max = arry [i]
+        else:
+            matrix [l][arry [i]]  =  arry [i+1]
+            matrix [l][arry [i+1]]  =  arry [i]
+            arry [j]  =  arry [i+1]
+            max = arry [i]
+        i += 2
+        s += 1
+        j += 1
+    count -= 1
+    l += 1
+
+i = 0
+second_max = a [matrix [i][max]]
+while i < f-1:
+    num += 1
+    if second_max < a [matrix [i+1][max]]:
+        second_max = a [matrix [i+1][max]]
+    i+=1
+
+print('Max =', a[max])
+print('Second_max =', second_max)
+print('Number of count =', num)
